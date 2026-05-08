@@ -1,0 +1,18 @@
+usage: caueeg_removenoise_with_levels.py [-h] [--mil_pool_type MIL_POOL_TYPE]
+                                         [--topology TOPOLOGY]
+                                         [--feature_families_str FEATURE_FAMILIES_STR]
+                                         [--connectivity_metric CONNECTIVITY_METRIC]
+                                         [--connectivity_band CONNECTIVITY_BAND]
+                                         [--use_lr_scheduler] [--test_code]
+                                         [--use_gcn_norm]
+                                         [--use_kmean_prototype]
+                                         [--base_k BASE_K]
+                                         [--level {segment,macro,subject}]
+                                         [--macro_duration_sec MACRO_DURATION_SEC]
+                                         [--level_reduce {mean,median,max,min,sum}]
+                                         [--segment_selection_strategy {original_random_k,clean_random_k,clean_kmeans_k,all_clean,clean_weighted_k}]
+                                         [--candidate_fusion_mode {concat,gated,mean}]
+                                         [--encoder_type {gnn,gnn_bank,cnn_bank,linkx_cnn_bank,linkx_bank,linkx_fused_bank,hybrid,gat,LINKX,linkx_cnn,cnn5,linkx_cnn5,mlp_node,sage,gcn2,h2gcn}]
+                                         [--backbone {gatv2,gcn,sage}]
+caueeg_removenoise_with_levels.py: error: argument --segment_selection_strategy: invalid choice: 'original_k' (choose from 'original_random_k', 'clean_random_k', 'clean_kmeans_k', 'all_clean', 'clean_weighted_k')
+Device cuda

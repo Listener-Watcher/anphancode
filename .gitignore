@@ -1,0 +1,59 @@
+# Ignore everything in graph by default
+graph/*
+AHEAP_data/*
+graphs4mer-main/*
+results/*
+synthesis-hypergraph/*
+CAUEEG/*
+results_caueeg/*
+# Keep .py and .sh files in graph
+!graph/*.py
+!graph/*.sh
+# Re-include the viz folder and everything inside it
+!graph/viz/
+!graph/viz/**
+!graph/pipeline/
+!graph/pipeline/**
+!graph/caueeg/
+!graph/caueeg/**
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore other files/folders
+models/
+data/
+*.h5
+*.pth
+*.pt
+*.txt
+*.tsv
+*.csv
+
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore models / data
+*.h5
+*.pth
+*.pt
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore text and tab-separated data files
+*.txt
+*.tsv
+
+miniconda-installer.sh
+*.npy
+results/
+graphs4mer-main/

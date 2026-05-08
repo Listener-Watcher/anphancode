@@ -1,0 +1,65 @@
+Device: cuda
+data_paths length = 87 unique label = 3
+-- num_classes = 3 -- class_labels = [0, 1, 2] -- class_names = ['Healthy', 'AD', 'FTD']
+
+========== Split seed: 15 ==========
+
+========== Fold: 0 ==========
+# Train subjects = 58 | # Validation subjects = 11
+[NodeInputBuilder] mode=handcrafted_plus_raw_gated | handcrafted_dim=15 | raw_emb_dim=16 | output_dim=32
+Traceback (most recent call last):
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 1799, in <module>
+    main()
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 1757, in main
+    model, val_metrics, history, best_state = fit_mil_baseline(
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std.py", line 790, in fit_mil_baseline
+    train_metrics = train_one_epoch(model, train_loader, optimizer, criterion, device)
+  File "/home/anphan/Documents/EEG_Project/graph/mil_utils.py", line 3180, in train_one_epoch
+    out = model(batch)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 1173, in forward
+    pyg_batch, node_input_debug, mask, dense_adj, dense_node_x = self._build_node_inputs(pyg_batch_in)
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 1103, in _build_node_inputs
+    node_input_out = self.node_input_builder(
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 544, in forward
+    raw_emb = self.raw_encoder(raw_x)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 286, in forward
+    h = self.blocks(h)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/Documents/EEG_Project/graph/mil_full_std_nodeinput.py", line 240, in forward
+    return self.act(self.block(x) + x)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 375, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/anphan/miniconda3/envs/eeg_env/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 370, in _conv_forward
+    return F.conv1d(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 928.00 MiB. GPU 0 has a total capacity of 10.74 GiB of which 147.94 MiB is free. Including non-PyTorch memory, this process has 10.24 GiB memory in use. Of the allocated memory 9.60 GiB is allocated by PyTorch, and 469.60 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

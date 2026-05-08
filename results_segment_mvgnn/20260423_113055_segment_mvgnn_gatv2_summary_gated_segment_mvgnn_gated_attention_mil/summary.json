@@ -1,0 +1,747 @@
+{
+  "run_dir": "results_segment_mvgnn/20260423_113055_segment_mvgnn_gatv2_summary_gated_segment_mvgnn_gated_attention_mil",
+  "best_epoch": 7,
+  "monitor": "balanced_accuracy",
+  "monitor_value": 0.5040962621607783,
+  "train_metrics": {
+    "num_samples": 947,
+    "class_labels": [
+      0,
+      1,
+      2
+    ],
+    "accuracy": 0.5438225976768744,
+    "balanced_accuracy": 0.5483333015723285,
+    "macro_f1": 0.5293255195843989,
+    "confusion_matrix": [
+      [
+        256,
+        78,
+        32
+      ],
+      [
+        118,
+        96,
+        119
+      ],
+      [
+        25,
+        60,
+        163
+      ]
+    ],
+    "brier_score": 0.5688065414914805,
+    "roc_auc": {
+      "macro_ovr": 0.7265919003604647,
+      "weighted_ovr": 0.7219169637729399,
+      "per_class": {
+        "0": 0.7882537174458961,
+        "1": 0.5889064960726199,
+        "2": 0.8026154875628778
+      },
+      "valid_classes": [
+        0,
+        1,
+        2
+      ],
+      "missing_classes": [],
+      "num_valid_classes": 3
+    },
+    "pr_auc": {
+      "macro_ovr": 0.5485844391784288,
+      "weighted_ovr": 0.5499180708932103,
+      "per_class": {
+        "0": 0.6489788384852614,
+        "1": 0.42407161701009655,
+        "2": 0.5727028620399286
+      },
+      "valid_classes": [
+        0,
+        1,
+        2
+      ],
+      "missing_classes": [],
+      "num_valid_classes": 3
+    },
+    "roc_auc_macro_ovr": 0.7265919003604647,
+    "pr_auc_macro_ovr": 0.5485844391784288
+  },
+  "val_metrics": {
+    "num_samples": 119,
+    "class_labels": [
+      0,
+      1,
+      2
+    ],
+    "accuracy": 0.4789915966386555,
+    "balanced_accuracy": 0.5040962621607783,
+    "macro_f1": 0.47070597544980847,
+    "confusion_matrix": [
+      [
+        23,
+        15,
+        8
+      ],
+      [
+        18,
+        10,
+        14
+      ],
+      [
+        6,
+        1,
+        24
+      ]
+    ],
+    "brier_score": 0.6315026682056486,
+    "roc_auc": {
+      "macro_ovr": 0.6238583078789285,
+      "weighted_ovr": 0.6123983217197215,
+      "per_class": {
+        "0": 0.6509827278141751,
+        "1": 0.4628942486085343,
+        "2": 0.7576979472140762
+      },
+      "valid_classes": [
+        0,
+        1,
+        2
+      ],
+      "missing_classes": [],
+      "num_valid_classes": 3
+    },
+    "pr_auc": {
+      "macro_ovr": 0.4565858988475841,
+      "weighted_ovr": 0.45468252129876685,
+      "per_class": {
+        "0": 0.48953462495214656,
+        "1": 0.3910647334041582,
+        "2": 0.4891583381864475
+      },
+      "valid_classes": [
+        0,
+        1,
+        2
+      ],
+      "missing_classes": [],
+      "num_valid_classes": 3
+    },
+    "roc_auc_macro_ovr": 0.6238583078789285,
+    "pr_auc_macro_ovr": 0.4565858988475841
+  },
+  "test_metrics": {
+    "num_samples": 118,
+    "class_labels": [
+      0,
+      1,
+      2
+    ],
+    "accuracy": 0.5338983050847458,
+    "balanced_accuracy": 0.5424976339524966,
+    "macro_f1": 0.5149161991461134,
+    "confusion_matrix": [
+      [
+        31,
+        9,
+        6
+      ],
+      [
+        15,
+        10,
+        16
+      ],
+      [
+        2,
+        7,
+        22
+      ]
+    ],
+    "brier_score": 0.5589931527644636,
+    "roc_auc": {
+      "macro_ovr": 0.7518702825855996,
+      "weighted_ovr": 0.7487999937590819,
+      "per_class": {
+        "0": 0.8182367149758454,
+        "1": 0.6160912258473235,
+        "2": 0.8212829069336299
+      },
+      "valid_classes": [
+        0,
+        1,
+        2
+      ],
+      "missing_classes": [],
+      "num_valid_classes": 3
+    },
+    "pr_auc": {
+      "macro_ovr": 0.6063978138249801,
+      "weighted_ovr": 0.6121296101267633,
+      "per_class": {
+        "0": 0.7469120905541259,
+        "1": 0.46326159509230225,
+        "2": 0.6090197558285123
+      },
+      "valid_classes": [
+        0,
+        1,
+        2
+      ],
+      "missing_classes": [],
+      "num_valid_classes": 3
+    },
+    "roc_auc_macro_ovr": 0.7518702825855996,
+    "pr_auc_macro_ovr": 0.6063978138249801
+  },
+  "class_names": [
+    "normal",
+    "mci",
+    "dementia"
+  ],
+  "view_names": [
+    "structural_local_binary",
+    "coherence_theta_topk4",
+    "coherence_alpha_topk4",
+    "wpli_alpha_topk4",
+    "feature_rbp_cosine_topk4",
+    "structural_local_coherence_alpha",
+    "structural_local_wpli_alpha"
+  ],
+  "model_family": "segment_mvgnn",
+  "base_k": 8,
+  "max_k_per_subject": 64,
+  "spec": {
+    "name": "segment_mvgnn_gatv2_summary_gated",
+    "task": "dementia",
+    "dataset_path": "/mnt/data/anphan/CAUEEG/caueeg-dataset",
+    "h5_path": "/mnt/data/anphan/CAUEEG/caueeg_randomcrop_master_dementia_seed42.h5",
+    "feature_families": [
+      "relative_band_power",
+      "statistical"
+    ],
+    "connectivity_metrics_to_load": [
+      "coherence",
+      "wpli"
+    ],
+    "level": {
+      "graph_level": "segment",
+      "macro_duration_sec": 300.0,
+      "feature_reduce": "mean",
+      "connectivity_reduce": "mean"
+    },
+    "topology": {
+      "strategy": "fused_bank",
+      "fixed_edge_pairs": null,
+      "fixed_adjacency": null,
+      "topology_metric": "coherence",
+      "topology_band": "alpha",
+      "similarity": "cosine",
+      "topology_kwargs": {
+        "mode": "topk",
+        "topk": 4
+      },
+      "graph_bank_specs": [
+        {
+          "name": "structural_local_binary",
+          "topology_mode": "fixed",
+          "edge_weight_mode": "binary",
+          "edge_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              6
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              1,
+              16
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              7,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              8,
+              18
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              18
+            ]
+          ]
+        },
+        {
+          "name": "coherence_theta_topk4",
+          "topology_mode": "connectivity",
+          "edge_weight_mode": "connectivity",
+          "connectivity_metric": "coherence",
+          "band": "theta",
+          "topology_kwargs": {
+            "mode": "topk",
+            "topk": 4
+          }
+        },
+        {
+          "name": "coherence_alpha_topk4",
+          "topology_mode": "connectivity",
+          "edge_weight_mode": "connectivity",
+          "connectivity_metric": "coherence",
+          "band": "alpha",
+          "topology_kwargs": {
+            "mode": "topk",
+            "topk": 4
+          }
+        },
+        {
+          "name": "wpli_alpha_topk4",
+          "topology_mode": "connectivity",
+          "edge_weight_mode": "connectivity",
+          "connectivity_metric": "wpli",
+          "band": "alpha",
+          "topology_kwargs": {
+            "mode": "topk",
+            "topk": 4
+          }
+        },
+        {
+          "name": "feature_rbp_cosine_topk4",
+          "topology_mode": "feature_induced",
+          "edge_weight_mode": "topology_weight",
+          "similarity": "cosine",
+          "topology_kwargs": {
+            "mode": "topk",
+            "topk": 4
+          },
+          "feature_family": "relative_band_power"
+        },
+        {
+          "name": "structural_local_coherence_alpha",
+          "topology_mode": "fixed",
+          "edge_weight_mode": "connectivity",
+          "edge_weight_metric": "coherence",
+          "edge_weight_band": "alpha",
+          "edge_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              6
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              1,
+              16
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              7,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              8,
+              18
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              18
+            ]
+          ]
+        },
+        {
+          "name": "structural_local_wpli_alpha",
+          "topology_mode": "fixed",
+          "edge_weight_mode": "connectivity",
+          "edge_weight_metric": "wpli",
+          "edge_weight_band": "alpha",
+          "edge_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              12
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              6
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              1,
+              16
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              7,
+              17
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              8,
+              18
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              18
+            ]
+          ]
+        }
+      ],
+      "fuse_method": "mean",
+      "fuse_topology_rule": "vote",
+      "fuse_vote_threshold": 0.45,
+      "primary_candidate": 0
+    },
+    "edge_weights": {
+      "strategy": "connectivity",
+      "edge_metric": "coherence",
+      "edge_band": "alpha",
+      "normalize_mode": "none",
+      "fused_sources": [],
+      "fused_method": "mean"
+    },
+    "connectivity_tensor": {
+      "metrics": [
+        "coherence"
+      ],
+      "bands": [
+        "alpha"
+      ]
+    },
+    "model": {
+      "family": "segment_mvgnn",
+      "connectivity_encoder_type": "cnn",
+      "backbone": "gatv2",
+      "hidden_dim": 64,
+      "emb_dim": 128,
+      "dropout": 0.2,
+      "num_layers": 2,
+      "gat_heads": 4,
+      "use_edge_weight": true,
+      "use_batchnorm": true,
+      "graph_readout": "gated_attention",
+      "fusion_mode": "concat",
+      "graph_bank_fusion_mode": "summary_gated",
+      "fusion_temperature": 0.7,
+      "fusion_hidden_dim": 64
+    },
+    "aggregation": {
+      "strategy": "gated_attention_mil",
+      "posthoc_eval_vote": "soft_vote",
+      "attn_dim": 128,
+      "train_max_instances_per_subject": null,
+      "eval_max_instances_per_subject": null,
+      "base_k": 8,
+      "max_k_per_subject": 64,
+      "eval_k_per_subject": null
+    },
+    "train": {
+      "batch_size": 8,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "epochs": 80,
+      "patience": 20,
+      "monitor": "balanced_accuracy",
+      "monitor_mode": "max",
+      "seed": 42,
+      "num_workers": 0
+    },
+    "output_root": "./results_segment_mvgnn",
+    "class_names": null
+  }
+}

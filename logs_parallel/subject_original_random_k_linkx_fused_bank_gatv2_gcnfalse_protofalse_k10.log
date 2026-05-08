@@ -1,0 +1,187 @@
+Device cuda
+[TEST_CODE] Using first 10 valid subjects per split.
+[TEST_CODE] train_ids_filter: ['00788', '00479', '00892', '00078', '01184', '01060', '00600', '00792', '00868', '00320']
+[TEST_CODE] val_ids_filter: ['00341', '00510', '00172', '01021', '01327', '01094', '01258', '00807', '00687', '01052']
+[TEST_CODE] test_ids_filter: ['00789', '00934', '00142', '00883', '00751', '00140', '01034', '00008', '00551', '00631']
+[H5] Reusing existing master file: /home/anphan/Documents/caueeg_randomcrop_mono_dementia_seed42.h5
+
+[train_graphs_original]
+num graphs: 1060
+num subjects: 10
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 5, 1: 2, 2: 3}
+
+[val_graphs_original]
+num graphs: 80
+num subjects: 10
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 5, 1: 3, 0: 2}
+
+[test_graphs_original]
+num graphs: 80
+num subjects: 10
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 8, 1: 2}
+
+[train_graphs_after_original_random_k]
+num graphs: 1060
+num subjects: 10
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 5, 1: 2, 2: 3}
+
+[train_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {2: 3, 1: 2, 0: 5}
+
+[val_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {1: 3, 2: 5, 0: 2}
+
+[test_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {0: 8, 1: 2}
+/home/anphan/Downloads/GNN_2026-main/graph
+Saved top-k checkpoint: epoch=1, val_loss=1.108427, val_bal_acc=0.3333, val_macro_f1=0.1111
+Validation loss improved at epoch 1: 1.108427
+Saved final selected checkpoint to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/result_MIL-LinkX-level-testonly/20260501_112059_subject_original_random_k_wpli_k10_nonorm_linkx_fused_bank_gatv2_mean_fixed/seed15/best_model.pt
+Saved segment attention with prototypes to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/result_MIL-LinkX-level-testonly/20260501_112059_subject_original_random_k_wpli_k10_nonorm_linkx_fused_bank_gatv2_mean_fixed/seed15/segment_attention_with_prototypes.csv
+  split  subject_id  true_label  ...    prob_0    prob_1    prob_2
+0  test  test_00008           0  ...  0.350847  0.320607  0.328546
+1  test  test_00140           0  ...  0.350919  0.321613  0.327468
+2  test  test_00142           0  ...  0.350306  0.321517  0.328177
+3  test  test_00551           1  ...  0.351543  0.321579  0.326879
+4  test  test_00631           0  ...  0.351099  0.321108  0.327792
+
+[5 rows x 11 columns]
+[TEST_CODE] Using first 10 valid subjects per split.
+[TEST_CODE] train_ids_filter: ['00788', '00479', '00892', '00078', '01184', '01060', '00600', '00792', '00868', '00320']
+[TEST_CODE] val_ids_filter: ['00341', '00510', '00172', '01021', '01327', '01094', '01258', '00807', '00687', '01052']
+[TEST_CODE] test_ids_filter: ['00789', '00934', '00142', '00883', '00751', '00140', '01034', '00008', '00551', '00631']
+[H5] Reusing existing master file: /home/anphan/Documents/caueeg_randomcrop_mono_dementia_seed42.h5
+
+[train_graphs_original]
+num graphs: 1060
+num subjects: 10
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 5, 1: 2, 2: 3}
+
+[val_graphs_original]
+num graphs: 80
+num subjects: 10
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 5, 1: 3, 0: 2}
+
+[test_graphs_original]
+num graphs: 80
+num subjects: 10
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 8, 1: 2}
+
+[train_graphs_after_original_random_k]
+num graphs: 1060
+num subjects: 10
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 5, 1: 2, 2: 3}
+
+[train_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {2: 3, 1: 2, 0: 5}
+
+[val_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {1: 3, 2: 5, 0: 2}
+
+[test_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {0: 8, 1: 2}
+Saved top-k checkpoint: epoch=1, val_loss=1.076318, val_bal_acc=0.3333, val_macro_f1=0.2222
+Validation loss improved at epoch 1: 1.076318
+Saved final selected checkpoint to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/result_MIL-LinkX-level-testonly/20260501_112059_subject_original_random_k_wpli_k10_nonorm_linkx_fused_bank_gatv2_mean_fixed/seed42/best_model.pt
+Saved segment attention with prototypes to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/result_MIL-LinkX-level-testonly/20260501_112059_subject_original_random_k_wpli_k10_nonorm_linkx_fused_bank_gatv2_mean_fixed/seed42/segment_attention_with_prototypes.csv
+  split  subject_id  true_label  ...    prob_0    prob_1    prob_2
+0  test  test_00008           0  ...  0.340932  0.311572  0.347496
+1  test  test_00140           0  ...  0.342877  0.309650  0.347472
+2  test  test_00142           0  ...  0.340217  0.310546  0.349238
+3  test  test_00551           1  ...  0.340265  0.308337  0.351398
+4  test  test_00631           0  ...  0.341030  0.310255  0.348715
+
+[5 rows x 11 columns]
+[TEST_CODE] Using first 10 valid subjects per split.
+[TEST_CODE] train_ids_filter: ['00788', '00479', '00892', '00078', '01184', '01060', '00600', '00792', '00868', '00320']
+[TEST_CODE] val_ids_filter: ['00341', '00510', '00172', '01021', '01327', '01094', '01258', '00807', '00687', '01052']
+[TEST_CODE] test_ids_filter: ['00789', '00934', '00142', '00883', '00751', '00140', '01034', '00008', '00551', '00631']
+[H5] Reusing existing master file: /home/anphan/Documents/caueeg_randomcrop_mono_dementia_seed42.h5
+
+[train_graphs_original]
+num graphs: 1060
+num subjects: 10
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 5, 1: 2, 2: 3}
+
+[val_graphs_original]
+num graphs: 80
+num subjects: 10
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 5, 1: 3, 0: 2}
+
+[test_graphs_original]
+num graphs: 80
+num subjects: 10
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 8, 1: 2}
+
+[train_graphs_after_original_random_k]
+num graphs: 1060
+num subjects: 10
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 5, 1: 2, 2: 3}
+
+[train_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {2: 3, 1: 2, 0: 5}
+
+[val_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {1: 3, 2: 5, 0: 2}
+
+[test_subject_instances]
+num graphs: 10
+num subjects: 10
+segments per subject: min=1, mean=1.00, max=1
+subjects per label: {0: 8, 1: 2}
+Saved top-k checkpoint: epoch=1, val_loss=1.094407, val_bal_acc=0.3333, val_macro_f1=0.1538
+Validation loss improved at epoch 1: 1.094407
+Saved final selected checkpoint to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/result_MIL-LinkX-level-testonly/20260501_112059_subject_original_random_k_wpli_k10_nonorm_linkx_fused_bank_gatv2_mean_fixed/seed100/best_model.pt
+Saved segment attention with prototypes to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/result_MIL-LinkX-level-testonly/20260501_112059_subject_original_random_k_wpli_k10_nonorm_linkx_fused_bank_gatv2_mean_fixed/seed100/segment_attention_with_prototypes.csv
+  split  subject_id  true_label  ...    prob_0    prob_1    prob_2
+0  test  test_00008           0  ...  0.311823  0.357027  0.331150
+1  test  test_00140           0  ...  0.308620  0.357343  0.334037
+2  test  test_00142           0  ...  0.312137  0.355859  0.332005
+3  test  test_00551           1  ...  0.309055  0.356067  0.334877
+4  test  test_00631           0  ...  0.311536  0.356644  0.331820
+
+[5 rows x 11 columns]
+Traceback (most recent call last):
+  File "/home/anphan/Downloads/GNN_2026-main/graph/caueeg_removenoise_with_levels.py", line 2299, in <module>
+    seed_df, agg_df = save_seed_aggregation(
+  File "/home/anphan/Downloads/GNN_2026-main/graph/caueeg_removenoise_with_levels.py", line 1895, in save_seed_aggregation
+    cm_stack = np.stack(cms, axis=0)
+  File "/home/anphan/.conda/envs/gnn_env/lib/python3.10/site-packages/numpy/_core/shape_base.py", line 448, in stack
+    raise ValueError('all input arrays must have the same shape')
+ValueError: all input arrays must have the same shape

@@ -1,0 +1,773 @@
+Device cuda
+[H5] Reusing existing master file: /home/anphan/Documents/caueeg_randomcrop_mono_dementia_seed42.h5
+
+[train_graphs_original]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[val_graphs_original]
+num graphs: 952
+num subjects: 119
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 31, 1: 42, 0: 46}
+
+[test_graphs_original]
+num graphs: 944
+num subjects: 118
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 46, 1: 41, 2: 31}
+
+[train_graphs_after_original_random_k]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[train_segment_instances]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[val_segment_instances]
+num graphs: 952
+num subjects: 119
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 31, 1: 42, 0: 46}
+
+[test_segment_instances]
+num graphs: 944
+num subjects: 118
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 46, 1: 41, 2: 31}
+Saved top-k checkpoint: epoch=1, val_loss=1.023869, val_bal_acc=0.4371, val_macro_f1=0.3510
+Validation loss improved at epoch 1: 1.023869
+Saved top-k checkpoint: epoch=2, val_loss=0.965166, val_bal_acc=0.5242, val_macro_f1=0.4834
+Validation loss improved at epoch 2: 0.965166
+Saved top-k checkpoint: epoch=3, val_loss=0.995173, val_bal_acc=0.5170, val_macro_f1=0.4640
+Saved top-k checkpoint: epoch=4, val_loss=0.957169, val_bal_acc=0.4514, val_macro_f1=0.4572
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed15/best_model_topk_epoch001_valloss1.023869.pt
+Validation loss improved at epoch 4: 0.957169
+Epoch [005/500] | Train Loss: 0.9096 | Train Acc: 0.5607 | Train Bal Acc: 0.5530 | Train F1: 0.5419 || Val Loss: 0.9504 | Val Acc: 0.4958 | Val Bal Acc: 0.4863 | Val F1: 0.4677 ||LR: 0.001 -> 0.001
+Train pred counts: [467 234 246]
+Val pred counts: [61 28 30]
+Saved top-k checkpoint: epoch=5, val_loss=0.950404, val_bal_acc=0.4863, val_macro_f1=0.4677
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed15/best_model_topk_epoch003_valloss0.995173.pt
+Validation loss improved at epoch 5: 0.950404
+Saved top-k checkpoint: epoch=6, val_loss=0.946150, val_bal_acc=0.4934, val_macro_f1=0.4731
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed15/best_model_topk_epoch002_valloss0.965166.pt
+Validation loss improved at epoch 6: 0.946150
+Saved top-k checkpoint: epoch=7, val_loss=0.943704, val_bal_acc=0.4865, val_macro_f1=0.4843
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed15/best_model_topk_epoch004_valloss0.957169.pt
+Validation loss improved at epoch 7: 0.943704
+Epoch [010/500] | Train Loss: 0.7739 | Train Acc: 0.6336 | Train Bal Acc: 0.6282 | Train F1: 0.6266 || Val Loss: 0.9572 | Val Acc: 0.5294 | Val Bal Acc: 0.5202 | Val F1: 0.5191 ||LR: 0.001 -> 0.001
+Train pred counts: [424 294 229]
+Val pred counts: [54 38 27]
+Epoch [015/500] | Train Loss: 0.6554 | Train Acc: 0.6980 | Train Bal Acc: 0.6911 | Train F1: 0.6969 || Val Loss: 1.1280 | Val Acc: 0.4874 | Val Bal Acc: 0.4678 | Val F1: 0.4714 ||LR: 0.001 -> 0.001
+Train pred counts: [381 355 211]
+Val pred counts: [51 49 19]
+Epoch [020/500] | Train Loss: 0.5394 | Train Acc: 0.7687 | Train Bal Acc: 0.7626 | Train F1: 0.7665 || Val Loss: 1.3165 | Val Acc: 0.4874 | Val Bal Acc: 0.4874 | Val F1: 0.4877 ||LR: 0.001 -> 0.001
+Train pred counts: [363 359 225]
+Val pred counts: [42 44 33]
+Epoch [025/500] | Train Loss: 0.4608 | Train Acc: 0.8099 | Train Bal Acc: 0.8069 | Train F1: 0.8097 || Val Loss: 1.4020 | Val Acc: 0.5126 | Val Bal Acc: 0.5070 | Val F1: 0.5072 ||LR: 0.001 -> 0.001
+Train pred counts: [371 344 232]
+Val pred counts: [43 43 33]
+Epoch [030/500] | Train Loss: 0.3784 | Train Acc: 0.8511 | Train Bal Acc: 0.8497 | Train F1: 0.8505 || Val Loss: 1.6252 | Val Acc: 0.5462 | Val Bal Acc: 0.5296 | Val F1: 0.5316 ||LR: 0.001 -> 0.001
+Train pred counts: [360 343 244]
+Val pred counts: [37 63 19]
+Epoch [035/500] | Train Loss: 0.3405 | Train Acc: 0.8617 | Train Bal Acc: 0.8630 | Train F1: 0.8635 || Val Loss: 1.6384 | Val Acc: 0.5294 | Val Bal Acc: 0.5075 | Val F1: 0.5108 ||LR: 0.001 -> 0.001
+Train pred counts: [366 336 245]
+Val pred counts: [47 54 18]
+Epoch [040/500] | Train Loss: 0.2782 | Train Acc: 0.8722 | Train Bal Acc: 0.8730 | Train F1: 0.8734 || Val Loss: 1.7043 | Val Acc: 0.5462 | Val Bal Acc: 0.5387 | Val F1: 0.5470 ||LR: 0.001 -> 0.001
+Train pred counts: [370 331 246]
+Val pred counts: [37 61 21]
+Epoch [045/500] | Train Loss: 0.2427 | Train Acc: 0.9007 | Train Bal Acc: 0.9004 | Train F1: 0.9010 || Val Loss: 1.8836 | Val Acc: 0.5630 | Val Bal Acc: 0.5561 | Val F1: 0.5665 ||LR: 0.001 -> 0.001
+Train pred counts: [358 345 244]
+Val pred counts: [51 46 22]
+Epoch [050/500] | Train Loss: 0.2451 | Train Acc: 0.8976 | Train Bal Acc: 0.8974 | Train F1: 0.8957 || Val Loss: 2.0777 | Val Acc: 0.5378 | Val Bal Acc: 0.5188 | Val F1: 0.5233 ||LR: 0.001 -> 0.001
+Train pred counts: [368 321 258]
+Val pred counts: [42 64 13]
+No val-loss improvement at epoch 50. patience 1/100
+No val-loss improvement at epoch 51. patience 2/100
+No val-loss improvement at epoch 52. patience 3/100
+No val-loss improvement at epoch 53. patience 4/100
+No val-loss improvement at epoch 54. patience 5/100
+Epoch [055/500] | Train Loss: 0.2040 | Train Acc: 0.9166 | Train Bal Acc: 0.9173 | Train F1: 0.9171 || Val Loss: 1.8716 | Val Acc: 0.4454 | Val Bal Acc: 0.4505 | Val F1: 0.4503 ||LR: 0.001 -> 0.001
+Train pred counts: [360 338 249]
+Val pred counts: [35 47 37]
+No val-loss improvement at epoch 55. patience 6/100
+No val-loss improvement at epoch 56. patience 7/100
+No val-loss improvement at epoch 57. patience 8/100
+No val-loss improvement at epoch 58. patience 9/100
+No val-loss improvement at epoch 59. patience 10/100
+Epoch [060/500] | Train Loss: 0.2100 | Train Acc: 0.9219 | Train Bal Acc: 0.9235 | Train F1: 0.9222 || Val Loss: 1.8945 | Val Acc: 0.5378 | Val Bal Acc: 0.5245 | Val F1: 0.5300 ||LR: 0.001 -> 0.001
+Train pred counts: [364 328 255]
+Val pred counts: [49 48 22]
+No val-loss improvement at epoch 60. patience 11/100
+No val-loss improvement at epoch 61. patience 12/100
+No val-loss improvement at epoch 62. patience 13/100
+No val-loss improvement at epoch 63. patience 14/100
+No val-loss improvement at epoch 64. patience 15/100
+Epoch [065/500] | Train Loss: 0.1970 | Train Acc: 0.9314 | Train Bal Acc: 0.9318 | Train F1: 0.9315 || Val Loss: 2.3485 | Val Acc: 0.5546 | Val Bal Acc: 0.5375 | Val F1: 0.5430 ||LR: 0.001 -> 0.001
+Train pred counts: [367 330 250]
+Val pred counts: [38 66 15]
+No val-loss improvement at epoch 65. patience 16/100
+No val-loss improvement at epoch 66. patience 17/100
+No val-loss improvement at epoch 67. patience 18/100
+No val-loss improvement at epoch 68. patience 19/100
+No val-loss improvement at epoch 69. patience 20/100
+Epoch [070/500] | Train Loss: 0.1466 | Train Acc: 0.9409 | Train Bal Acc: 0.9413 | Train F1: 0.9411 || Val Loss: 2.5200 | Val Acc: 0.5042 | Val Bal Acc: 0.4977 | Val F1: 0.5035 ||LR: 0.001 -> 0.001
+Train pred counts: [360 339 248]
+Val pred counts: [41 51 27]
+No val-loss improvement at epoch 70. patience 21/100
+No val-loss improvement at epoch 71. patience 22/100
+No val-loss improvement at epoch 72. patience 23/100
+No val-loss improvement at epoch 73. patience 24/100
+No val-loss improvement at epoch 74. patience 25/100
+Epoch [075/500] | Train Loss: 0.1547 | Train Acc: 0.9440 | Train Bal Acc: 0.9458 | Train F1: 0.9457 || Val Loss: 2.3114 | Val Acc: 0.5630 | Val Bal Acc: 0.5547 | Val F1: 0.5595 ||LR: 0.001 -> 0.001
+Train pred counts: [362 337 248]
+Val pred counts: [45 49 25]
+No val-loss improvement at epoch 75. patience 26/100
+No val-loss improvement at epoch 76. patience 27/100
+No val-loss improvement at epoch 77. patience 28/100
+No val-loss improvement at epoch 78. patience 29/100
+No val-loss improvement at epoch 79. patience 30/100
+Epoch [080/500] | Train Loss: 0.1817 | Train Acc: 0.9335 | Train Bal Acc: 0.9330 | Train F1: 0.9332 || Val Loss: 2.4143 | Val Acc: 0.4790 | Val Bal Acc: 0.4786 | Val F1: 0.4753 ||LR: 0.001 -> 0.001
+Train pred counts: [367 333 247]
+Val pred counts: [19 76 24]
+No val-loss improvement at epoch 80. patience 31/100
+No val-loss improvement at epoch 81. patience 32/100
+No val-loss improvement at epoch 82. patience 33/100
+No val-loss improvement at epoch 83. patience 34/100
+No val-loss improvement at epoch 84. patience 35/100
+Epoch [085/500] | Train Loss: 0.1042 | Train Acc: 0.9673 | Train Bal Acc: 0.9677 | Train F1: 0.9677 || Val Loss: 2.7875 | Val Acc: 0.5294 | Val Bal Acc: 0.5095 | Val F1: 0.5072 ||LR: 0.001 -> 0.001
+Train pred counts: [363 337 247]
+Val pred counts: [35 70 14]
+No val-loss improvement at epoch 85. patience 36/100
+No val-loss improvement at epoch 86. patience 37/100
+No val-loss improvement at epoch 87. patience 38/100
+No val-loss improvement at epoch 88. patience 39/100
+No val-loss improvement at epoch 89. patience 40/100
+Epoch [090/500] | Train Loss: 0.1465 | Train Acc: 0.9461 | Train Bal Acc: 0.9477 | Train F1: 0.9469 || Val Loss: 2.5049 | Val Acc: 0.5126 | Val Bal Acc: 0.5070 | Val F1: 0.5117 ||LR: 0.001 -> 0.001
+Train pred counts: [368 326 253]
+Val pred counts: [39 54 26]
+No val-loss improvement at epoch 90. patience 41/100
+No val-loss improvement at epoch 91. patience 42/100
+No val-loss improvement at epoch 92. patience 43/100
+No val-loss improvement at epoch 93. patience 44/100
+No val-loss improvement at epoch 94. patience 45/100
+Epoch [095/500] | Train Loss: 0.1507 | Train Acc: 0.9409 | Train Bal Acc: 0.9400 | Train F1: 0.9392 || Val Loss: 2.6839 | Val Acc: 0.5126 | Val Bal Acc: 0.4985 | Val F1: 0.5052 ||LR: 0.001 -> 0.001
+Train pred counts: [372 322 253]
+Val pred counts: [38 63 18]
+No val-loss improvement at epoch 95. patience 46/100
+No val-loss improvement at epoch 96. patience 47/100
+No val-loss improvement at epoch 97. patience 48/100
+No val-loss improvement at epoch 98. patience 49/100
+No val-loss improvement at epoch 99. patience 50/100
+Epoch [100/500] | Train Loss: 0.1369 | Train Acc: 0.9514 | Train Bal Acc: 0.9523 | Train F1: 0.9521 || Val Loss: 1.9353 | Val Acc: 0.5294 | Val Bal Acc: 0.5271 | Val F1: 0.5321 ||LR: 0.001 -> 0.001
+Train pred counts: [364 334 249]
+Val pred counts: [44 48 27]
+No val-loss improvement at epoch 100. patience 51/100
+No val-loss improvement at epoch 101. patience 52/100
+No val-loss improvement at epoch 102. patience 53/100
+No val-loss improvement at epoch 103. patience 54/100
+No val-loss improvement at epoch 104. patience 55/100
+Epoch [105/500] | Train Loss: 0.0996 | Train Acc: 0.9662 | Train Bal Acc: 0.9658 | Train F1: 0.9658 || Val Loss: 2.4439 | Val Acc: 0.5294 | Val Bal Acc: 0.5278 | Val F1: 0.5305 ||LR: 0.001 -> 0.001
+Train pred counts: [366 333 248]
+Val pred counts: [41 49 29]
+No val-loss improvement at epoch 105. patience 56/100
+No val-loss improvement at epoch 106. patience 57/100
+No val-loss improvement at epoch 107. patience 58/100
+No val-loss improvement at epoch 108. patience 59/100
+No val-loss improvement at epoch 109. patience 60/100
+Epoch [110/500] | Train Loss: 0.1126 | Train Acc: 0.9620 | Train Bal Acc: 0.9624 | Train F1: 0.9623 || Val Loss: 3.5514 | Val Acc: 0.5462 | Val Bal Acc: 0.5177 | Val F1: 0.5166 ||LR: 0.001 -> 0.001
+Train pred counts: [363 336 248]
+Val pred counts: [50 59 10]
+No val-loss improvement at epoch 110. patience 61/100
+No val-loss improvement at epoch 111. patience 62/100
+No val-loss improvement at epoch 112. patience 63/100
+No val-loss improvement at epoch 113. patience 64/100
+No val-loss improvement at epoch 114. patience 65/100
+Epoch [115/500] | Train Loss: 0.0835 | Train Acc: 0.9725 | Train Bal Acc: 0.9723 | Train F1: 0.9723 || Val Loss: 2.6887 | Val Acc: 0.4706 | Val Bal Acc: 0.4813 | Val F1: 0.4731 ||LR: 0.001 -> 0.001
+Train pred counts: [366 333 248]
+Val pred counts: [23 59 37]
+No val-loss improvement at epoch 115. patience 66/100
+No val-loss improvement at epoch 116. patience 67/100
+No val-loss improvement at epoch 117. patience 68/100
+No val-loss improvement at epoch 118. patience 69/100
+No val-loss improvement at epoch 119. patience 70/100
+Epoch [120/500] | Train Loss: 0.0738 | Train Acc: 0.9747 | Train Bal Acc: 0.9752 | Train F1: 0.9758 || Val Loss: 2.6353 | Val Acc: 0.5042 | Val Bal Acc: 0.4977 | Val F1: 0.5097 ||LR: 0.001 -> 0.001
+Train pred counts: [365 338 244]
+Val pred counts: [46 52 21]
+No val-loss improvement at epoch 120. patience 71/100
+No val-loss improvement at epoch 121. patience 72/100
+No val-loss improvement at epoch 122. patience 73/100
+No val-loss improvement at epoch 123. patience 74/100
+No val-loss improvement at epoch 124. patience 75/100
+Epoch [125/500] | Train Loss: 0.1333 | Train Acc: 0.9609 | Train Bal Acc: 0.9615 | Train F1: 0.9615 || Val Loss: 2.4779 | Val Acc: 0.5294 | Val Bal Acc: 0.5306 | Val F1: 0.5310 ||LR: 0.001 -> 0.001
+Train pred counts: [366 333 248]
+Val pred counts: [40 47 32]
+No val-loss improvement at epoch 125. patience 76/100
+No val-loss improvement at epoch 126. patience 77/100
+No val-loss improvement at epoch 127. patience 78/100
+No val-loss improvement at epoch 128. patience 79/100
+No val-loss improvement at epoch 129. patience 80/100
+Epoch [130/500] | Train Loss: 0.1011 | Train Acc: 0.9694 | Train Bal Acc: 0.9690 | Train F1: 0.9694 || Val Loss: 2.4900 | Val Acc: 0.5882 | Val Bal Acc: 0.5764 | Val F1: 0.5795 ||LR: 0.001 -> 0.001
+Train pred counts: [366 335 246]
+Val pred counts: [47 46 26]
+No val-loss improvement at epoch 130. patience 81/100
+No val-loss improvement at epoch 131. patience 82/100
+No val-loss improvement at epoch 132. patience 83/100
+No val-loss improvement at epoch 133. patience 84/100
+No val-loss improvement at epoch 134. patience 85/100
+Epoch [135/500] | Train Loss: 0.0889 | Train Acc: 0.9725 | Train Bal Acc: 0.9731 | Train F1: 0.9728 || Val Loss: 2.6934 | Val Acc: 0.5630 | Val Bal Acc: 0.5505 | Val F1: 0.5568 ||LR: 0.001 -> 0.001
+Train pred counts: [367 330 250]
+Val pred counts: [44 51 24]
+No val-loss improvement at epoch 135. patience 86/100
+No val-loss improvement at epoch 136. patience 87/100
+No val-loss improvement at epoch 137. patience 88/100
+No val-loss improvement at epoch 138. patience 89/100
+No val-loss improvement at epoch 139. patience 90/100
+Epoch [140/500] | Train Loss: 0.0985 | Train Acc: 0.9609 | Train Bal Acc: 0.9618 | Train F1: 0.9622 || Val Loss: 2.3374 | Val Acc: 0.5042 | Val Bal Acc: 0.4977 | Val F1: 0.5063 ||LR: 0.001 -> 0.001
+Train pred counts: [367 334 246]
+Val pred counts: [41 53 25]
+No val-loss improvement at epoch 140. patience 91/100
+No val-loss improvement at epoch 141. patience 92/100
+No val-loss improvement at epoch 142. patience 93/100
+No val-loss improvement at epoch 143. patience 94/100
+No val-loss improvement at epoch 144. patience 95/100
+Epoch [145/500] | Train Loss: 0.0798 | Train Acc: 0.9715 | Train Bal Acc: 0.9700 | Train F1: 0.9705 || Val Loss: 2.7502 | Val Acc: 0.5294 | Val Bal Acc: 0.5286 | Val F1: 0.5277 ||LR: 0.001 -> 0.001
+Train pred counts: [360 343 244]
+Val pred counts: [42 43 34]
+No val-loss improvement at epoch 145. patience 96/100
+No val-loss improvement at epoch 146. patience 97/100
+No val-loss improvement at epoch 147. patience 98/100
+No val-loss improvement at epoch 148. patience 99/100
+No val-loss improvement at epoch 149. patience 100/100
+Early stopping triggered at epoch 149. Best val_loss=0.943704 (epoch 7).
+Saved final selected checkpoint to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed15/best_model.pt
+Saved segment attention with prototypes to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed15/segment_attention_with_prototypes.csv
+  split  subject_id  true_label  ...    prob_0    prob_1    prob_2
+0  test  test_00001           1  ...  0.433661  0.380858  0.185481
+1  test  test_00001           1  ...  0.433661  0.380858  0.185481
+2  test  test_00001           1  ...  0.433661  0.380858  0.185481
+3  test  test_00001           1  ...  0.433661  0.380858  0.185481
+4  test  test_00001           1  ...  0.433661  0.380858  0.185481
+
+[5 rows x 11 columns]
+[H5] Reusing existing master file: /home/anphan/Documents/caueeg_randomcrop_mono_dementia_seed42.h5
+
+[train_graphs_original]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[val_graphs_original]
+num graphs: 952
+num subjects: 119
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 31, 1: 42, 0: 46}
+
+[test_graphs_original]
+num graphs: 944
+num subjects: 118
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 46, 1: 41, 2: 31}
+
+[train_graphs_after_original_random_k]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[train_segment_instances]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[val_segment_instances]
+num graphs: 952
+num subjects: 119
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 31, 1: 42, 0: 46}
+
+[test_segment_instances]
+num graphs: 944
+num subjects: 118
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 46, 1: 41, 2: 31}
+Saved top-k checkpoint: epoch=1, val_loss=1.036549, val_bal_acc=0.5066, val_macro_f1=0.4631
+Validation loss improved at epoch 1: 1.036549
+Saved top-k checkpoint: epoch=2, val_loss=0.986267, val_bal_acc=0.5401, val_macro_f1=0.4950
+Validation loss improved at epoch 2: 0.986267
+Saved top-k checkpoint: epoch=3, val_loss=0.950609, val_bal_acc=0.4841, val_macro_f1=0.4804
+Validation loss improved at epoch 3: 0.950609
+Saved top-k checkpoint: epoch=4, val_loss=0.950962, val_bal_acc=0.5214, val_macro_f1=0.4952
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed42/best_model_topk_epoch001_valloss1.036549.pt
+Epoch [005/500] | Train Loss: 0.9001 | Train Acc: 0.5459 | Train Bal Acc: 0.5374 | Train F1: 0.5200 || Val Loss: 0.9442 | Val Acc: 0.5042 | Val Bal Acc: 0.5203 | Val F1: 0.4803 ||LR: 0.001 -> 0.001
+Train pred counts: [497 210 240]
+Val pred counts: [52 23 44]
+Saved top-k checkpoint: epoch=5, val_loss=0.944232, val_bal_acc=0.5203, val_macro_f1=0.4803
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed42/best_model_topk_epoch002_valloss0.986267.pt
+Validation loss improved at epoch 5: 0.944232
+Saved top-k checkpoint: epoch=8, val_loss=0.936904, val_bal_acc=0.4758, val_macro_f1=0.4633
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed42/best_model_topk_epoch004_valloss0.950962.pt
+Validation loss improved at epoch 8: 0.936904
+Epoch [010/500] | Train Loss: 0.7482 | Train Acc: 0.6463 | Train Bal Acc: 0.6455 | Train F1: 0.6408 || Val Loss: 0.9751 | Val Acc: 0.4958 | Val Bal Acc: 0.4877 | Val F1: 0.4780 ||LR: 0.001 -> 0.001
+Train pred counts: [409 287 251]
+Val pred counts: [57 33 29]
+Epoch [015/500] | Train Loss: 0.6649 | Train Acc: 0.7001 | Train Bal Acc: 0.6971 | Train F1: 0.6974 || Val Loss: 1.0699 | Val Acc: 0.5294 | Val Bal Acc: 0.5208 | Val F1: 0.5220 ||LR: 0.001 -> 0.001
+Train pred counts: [403 310 234]
+Val pred counts: [51 41 27]
+Epoch [020/500] | Train Loss: 0.5830 | Train Acc: 0.7540 | Train Bal Acc: 0.7501 | Train F1: 0.7512 || Val Loss: 1.1082 | Val Acc: 0.5462 | Val Bal Acc: 0.5332 | Val F1: 0.5429 ||LR: 0.001 -> 0.001
+Train pred counts: [376 332 239]
+Val pred counts: [46 54 19]
+Epoch [025/500] | Train Loss: 0.4607 | Train Acc: 0.8068 | Train Bal Acc: 0.8000 | Train F1: 0.8035 || Val Loss: 1.4031 | Val Acc: 0.5798 | Val Bal Acc: 0.5496 | Val F1: 0.5467 ||LR: 0.001 -> 0.001
+Train pred counts: [370 351 226]
+Val pred counts: [60 44 15]
+Epoch [030/500] | Train Loss: 0.4157 | Train Acc: 0.8163 | Train Bal Acc: 0.8141 | Train F1: 0.8174 || Val Loss: 1.3324 | Val Acc: 0.5042 | Val Bal Acc: 0.5095 | Val F1: 0.5115 ||LR: 0.001 -> 0.001
+Train pred counts: [366 350 231]
+Val pred counts: [26 68 25]
+Epoch [035/500] | Train Loss: 0.3524 | Train Acc: 0.8532 | Train Bal Acc: 0.8533 | Train F1: 0.8545 || Val Loss: 1.6509 | Val Acc: 0.5462 | Val Bal Acc: 0.5437 | Val F1: 0.5445 ||LR: 0.001 -> 0.001
+Train pred counts: [361 344 242]
+Val pred counts: [47 42 30]
+Epoch [040/500] | Train Loss: 0.3223 | Train Acc: 0.8722 | Train Bal Acc: 0.8720 | Train F1: 0.8737 || Val Loss: 1.7331 | Val Acc: 0.5462 | Val Bal Acc: 0.5457 | Val F1: 0.5554 ||LR: 0.001 -> 0.001
+Train pred counts: [360 348 239]
+Val pred counts: [35 62 22]
+Epoch [045/500] | Train Loss: 0.2819 | Train Acc: 0.8860 | Train Bal Acc: 0.8861 | Train F1: 0.8858 || Val Loss: 1.9014 | Val Acc: 0.5042 | Val Bal Acc: 0.4850 | Val F1: 0.4890 ||LR: 0.001 -> 0.001
+Train pred counts: [360 337 250]
+Val pred counts: [48 53 18]
+Epoch [050/500] | Train Loss: 0.2656 | Train Acc: 0.8891 | Train Bal Acc: 0.8911 | Train F1: 0.8916 || Val Loss: 2.0190 | Val Acc: 0.4958 | Val Bal Acc: 0.4799 | Val F1: 0.4886 ||LR: 0.001 -> 0.001
+Train pred counts: [377 324 246]
+Val pred counts: [48 53 18]
+No val-loss improvement at epoch 50. patience 1/100
+No val-loss improvement at epoch 51. patience 2/100
+No val-loss improvement at epoch 52. patience 3/100
+No val-loss improvement at epoch 53. patience 4/100
+No val-loss improvement at epoch 54. patience 5/100
+Epoch [055/500] | Train Loss: 0.2255 | Train Acc: 0.9208 | Train Bal Acc: 0.9217 | Train F1: 0.9222 || Val Loss: 2.1294 | Val Acc: 0.5378 | Val Bal Acc: 0.5203 | Val F1: 0.5307 ||LR: 0.001 -> 0.001
+Train pred counts: [363 339 245]
+Val pred counts: [45 60 14]
+No val-loss improvement at epoch 55. patience 6/100
+No val-loss improvement at epoch 56. patience 7/100
+No val-loss improvement at epoch 57. patience 8/100
+No val-loss improvement at epoch 58. patience 9/100
+No val-loss improvement at epoch 59. patience 10/100
+Epoch [060/500] | Train Loss: 0.2516 | Train Acc: 0.9029 | Train Bal Acc: 0.9004 | Train F1: 0.9023 || Val Loss: 2.0036 | Val Acc: 0.5210 | Val Bal Acc: 0.5170 | Val F1: 0.5225 ||LR: 0.001 -> 0.001
+Train pred counts: [370 340 237]
+Val pred counts: [34 63 22]
+No val-loss improvement at epoch 60. patience 11/100
+No val-loss improvement at epoch 61. patience 12/100
+No val-loss improvement at epoch 62. patience 13/100
+No val-loss improvement at epoch 63. patience 14/100
+No val-loss improvement at epoch 64. patience 15/100
+Epoch [065/500] | Train Loss: 0.1830 | Train Acc: 0.9398 | Train Bal Acc: 0.9418 | Train F1: 0.9412 || Val Loss: 2.1785 | Val Acc: 0.5210 | Val Bal Acc: 0.5205 | Val F1: 0.5278 ||LR: 0.001 -> 0.001
+Train pred counts: [369 326 252]
+Val pred counts: [32 65 22]
+No val-loss improvement at epoch 65. patience 16/100
+No val-loss improvement at epoch 66. patience 17/100
+No val-loss improvement at epoch 67. patience 18/100
+No val-loss improvement at epoch 68. patience 19/100
+No val-loss improvement at epoch 69. patience 20/100
+Epoch [070/500] | Train Loss: 0.1873 | Train Acc: 0.9303 | Train Bal Acc: 0.9307 | Train F1: 0.9314 || Val Loss: 1.8764 | Val Acc: 0.5126 | Val Bal Acc: 0.5099 | Val F1: 0.5118 ||LR: 0.001 -> 0.001
+Train pred counts: [366 337 244]
+Val pred counts: [47 43 29]
+No val-loss improvement at epoch 70. patience 21/100
+No val-loss improvement at epoch 71. patience 22/100
+No val-loss improvement at epoch 72. patience 23/100
+No val-loss improvement at epoch 73. patience 24/100
+No val-loss improvement at epoch 74. patience 25/100
+Epoch [075/500] | Train Loss: 0.1624 | Train Acc: 0.9451 | Train Bal Acc: 0.9461 | Train F1: 0.9460 || Val Loss: 2.8097 | Val Acc: 0.4538 | Val Bal Acc: 0.4331 | Val F1: 0.4320 ||LR: 0.001 -> 0.001
+Train pred counts: [365 334 248]
+Val pred counts: [40 67 12]
+No val-loss improvement at epoch 75. patience 26/100
+No val-loss improvement at epoch 76. patience 27/100
+No val-loss improvement at epoch 77. patience 28/100
+No val-loss improvement at epoch 78. patience 29/100
+No val-loss improvement at epoch 79. patience 30/100
+Epoch [080/500] | Train Loss: 0.1918 | Train Acc: 0.9293 | Train Bal Acc: 0.9274 | Train F1: 0.9280 || Val Loss: 2.0651 | Val Acc: 0.5210 | Val Bal Acc: 0.5065 | Val F1: 0.5188 ||LR: 0.001 -> 0.001
+Train pred counts: [368 334 245]
+Val pred counts: [41 65 13]
+No val-loss improvement at epoch 80. patience 31/100
+No val-loss improvement at epoch 81. patience 32/100
+No val-loss improvement at epoch 82. patience 33/100
+No val-loss improvement at epoch 83. patience 34/100
+No val-loss improvement at epoch 84. patience 35/100
+Epoch [085/500] | Train Loss: 0.1470 | Train Acc: 0.9514 | Train Bal Acc: 0.9523 | Train F1: 0.9513 || Val Loss: 2.3280 | Val Acc: 0.5294 | Val Bal Acc: 0.5215 | Val F1: 0.5393 ||LR: 0.001 -> 0.001
+Train pred counts: [360 334 253]
+Val pred counts: [46 56 17]
+No val-loss improvement at epoch 85. patience 36/100
+No val-loss improvement at epoch 86. patience 37/100
+No val-loss improvement at epoch 87. patience 38/100
+No val-loss improvement at epoch 88. patience 39/100
+No val-loss improvement at epoch 89. patience 40/100
+Epoch [090/500] | Train Loss: 0.1974 | Train Acc: 0.9240 | Train Bal Acc: 0.9239 | Train F1: 0.9239 || Val Loss: 1.9835 | Val Acc: 0.5378 | Val Bal Acc: 0.5210 | Val F1: 0.5268 ||LR: 0.001 -> 0.001
+Train pred counts: [367 332 248]
+Val pred counts: [44 59 16]
+No val-loss improvement at epoch 90. patience 41/100
+No val-loss improvement at epoch 91. patience 42/100
+No val-loss improvement at epoch 92. patience 43/100
+No val-loss improvement at epoch 93. patience 44/100
+No val-loss improvement at epoch 94. patience 45/100
+Epoch [095/500] | Train Loss: 0.1251 | Train Acc: 0.9578 | Train Bal Acc: 0.9580 | Train F1: 0.9576 || Val Loss: 2.2976 | Val Acc: 0.5546 | Val Bal Acc: 0.5404 | Val F1: 0.5517 ||LR: 0.001 -> 0.001
+Train pred counts: [361 336 250]
+Val pred counts: [41 64 14]
+No val-loss improvement at epoch 95. patience 46/100
+No val-loss improvement at epoch 96. patience 47/100
+No val-loss improvement at epoch 97. patience 48/100
+No val-loss improvement at epoch 98. patience 49/100
+No val-loss improvement at epoch 99. patience 50/100
+Epoch [100/500] | Train Loss: 0.1321 | Train Acc: 0.9630 | Train Bal Acc: 0.9645 | Train F1: 0.9643 || Val Loss: 2.3286 | Val Acc: 0.5714 | Val Bal Acc: 0.5668 | Val F1: 0.5779 ||LR: 0.001 -> 0.001
+Train pred counts: [365 333 249]
+Val pred counts: [46 52 21]
+No val-loss improvement at epoch 100. patience 51/100
+No val-loss improvement at epoch 101. patience 52/100
+No val-loss improvement at epoch 102. patience 53/100
+No val-loss improvement at epoch 103. patience 54/100
+No val-loss improvement at epoch 104. patience 55/100
+Epoch [105/500] | Train Loss: 0.1090 | Train Acc: 0.9567 | Train Bal Acc: 0.9577 | Train F1: 0.9573 || Val Loss: 2.8945 | Val Acc: 0.5378 | Val Bal Acc: 0.5379 | Val F1: 0.5463 ||LR: 0.001 -> 0.001
+Train pred counts: [360 338 249]
+Val pred counts: [46 48 25]
+No val-loss improvement at epoch 105. patience 56/100
+No val-loss improvement at epoch 106. patience 57/100
+No val-loss improvement at epoch 107. patience 58/100
+No val-loss improvement at epoch 108. patience 59/100
+No val-loss improvement at epoch 109. patience 60/100
+Epoch [110/500] | Train Loss: 0.1205 | Train Acc: 0.9535 | Train Bal Acc: 0.9529 | Train F1: 0.9530 || Val Loss: 2.5480 | Val Acc: 0.5294 | Val Bal Acc: 0.5299 | Val F1: 0.5349 ||LR: 0.001 -> 0.001
+Train pred counts: [364 336 247]
+Val pred counts: [35 58 26]
+No val-loss improvement at epoch 110. patience 61/100
+No val-loss improvement at epoch 111. patience 62/100
+No val-loss improvement at epoch 112. patience 63/100
+No val-loss improvement at epoch 113. patience 64/100
+No val-loss improvement at epoch 114. patience 65/100
+Epoch [115/500] | Train Loss: 0.1432 | Train Acc: 0.9493 | Train Bal Acc: 0.9479 | Train F1: 0.9483 || Val Loss: 2.4558 | Val Acc: 0.5966 | Val Bal Acc: 0.5976 | Val F1: 0.5961 ||LR: 0.001 -> 0.001
+Train pred counts: [368 333 246]
+Val pred counts: [28 68 23]
+No val-loss improvement at epoch 115. patience 66/100
+No val-loss improvement at epoch 116. patience 67/100
+No val-loss improvement at epoch 117. patience 68/100
+No val-loss improvement at epoch 118. patience 69/100
+No val-loss improvement at epoch 119. patience 70/100
+Epoch [120/500] | Train Loss: 0.1337 | Train Acc: 0.9493 | Train Bal Acc: 0.9511 | Train F1: 0.9508 || Val Loss: 2.2213 | Val Acc: 0.4958 | Val Bal Acc: 0.4988 | Val F1: 0.5030 ||LR: 0.001 -> 0.001
+Train pred counts: [357 342 248]
+Val pred counts: [39 53 27]
+No val-loss improvement at epoch 120. patience 71/100
+No val-loss improvement at epoch 121. patience 72/100
+No val-loss improvement at epoch 122. patience 73/100
+No val-loss improvement at epoch 123. patience 74/100
+No val-loss improvement at epoch 124. patience 75/100
+Epoch [125/500] | Train Loss: 0.1568 | Train Acc: 0.9409 | Train Bal Acc: 0.9421 | Train F1: 0.9421 || Val Loss: 2.7362 | Val Acc: 0.5126 | Val Bal Acc: 0.4943 | Val F1: 0.4985 ||LR: 0.001 -> 0.001
+Train pred counts: [361 339 247]
+Val pred counts: [37 72 10]
+No val-loss improvement at epoch 125. patience 76/100
+No val-loss improvement at epoch 126. patience 77/100
+No val-loss improvement at epoch 127. patience 78/100
+No val-loss improvement at epoch 128. patience 79/100
+No val-loss improvement at epoch 129. patience 80/100
+Epoch [130/500] | Train Loss: 0.1120 | Train Acc: 0.9652 | Train Bal Acc: 0.9669 | Train F1: 0.9662 || Val Loss: 3.0010 | Val Acc: 0.5042 | Val Bal Acc: 0.4990 | Val F1: 0.5091 ||LR: 0.001 -> 0.001
+Train pred counts: [359 337 251]
+Val pred counts: [38 64 17]
+No val-loss improvement at epoch 130. patience 81/100
+No val-loss improvement at epoch 131. patience 82/100
+No val-loss improvement at epoch 132. patience 83/100
+No val-loss improvement at epoch 133. patience 84/100
+No val-loss improvement at epoch 134. patience 85/100
+Epoch [135/500] | Train Loss: 0.0721 | Train Acc: 0.9757 | Train Bal Acc: 0.9760 | Train F1: 0.9759 || Val Loss: 3.1479 | Val Acc: 0.5462 | Val Bal Acc: 0.5317 | Val F1: 0.5410 ||LR: 0.001 -> 0.001
+Train pred counts: [365 334 248]
+Val pred counts: [44 59 16]
+No val-loss improvement at epoch 135. patience 86/100
+No val-loss improvement at epoch 136. patience 87/100
+No val-loss improvement at epoch 137. patience 88/100
+No val-loss improvement at epoch 138. patience 89/100
+No val-loss improvement at epoch 139. patience 90/100
+Epoch [140/500] | Train Loss: 0.1054 | Train Acc: 0.9641 | Train Bal Acc: 0.9653 | Train F1: 0.9650 || Val Loss: 2.9879 | Val Acc: 0.5378 | Val Bal Acc: 0.5251 | Val F1: 0.5267 ||LR: 0.001 -> 0.001
+Train pred counts: [367 330 250]
+Val pred counts: [33 73 13]
+No val-loss improvement at epoch 140. patience 91/100
+No val-loss improvement at epoch 141. patience 92/100
+No val-loss improvement at epoch 142. patience 93/100
+No val-loss improvement at epoch 143. patience 94/100
+No val-loss improvement at epoch 144. patience 95/100
+Epoch [145/500] | Train Loss: 0.1089 | Train Acc: 0.9694 | Train Bal Acc: 0.9686 | Train F1: 0.9689 || Val Loss: 2.4979 | Val Acc: 0.5210 | Val Bal Acc: 0.5107 | Val F1: 0.5198 ||LR: 0.001 -> 0.001
+Train pred counts: [364 337 246]
+Val pred counts: [37 66 16]
+No val-loss improvement at epoch 145. patience 96/100
+No val-loss improvement at epoch 146. patience 97/100
+No val-loss improvement at epoch 147. patience 98/100
+No val-loss improvement at epoch 148. patience 99/100
+No val-loss improvement at epoch 149. patience 100/100
+Early stopping triggered at epoch 149. Best val_loss=0.936904 (epoch 8).
+Saved final selected checkpoint to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed42/best_model.pt
+Saved segment attention with prototypes to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed42/segment_attention_with_prototypes.csv
+  split  subject_id  true_label  ...    prob_0    prob_1    prob_2
+0  test  test_00001           1  ...  0.250648  0.384979  0.364373
+1  test  test_00001           1  ...  0.250648  0.384979  0.364373
+2  test  test_00001           1  ...  0.250648  0.384979  0.364373
+3  test  test_00001           1  ...  0.250648  0.384979  0.364373
+4  test  test_00001           1  ...  0.250648  0.384979  0.364373
+
+[5 rows x 11 columns]
+[H5] Reusing existing master file: /home/anphan/Documents/caueeg_randomcrop_mono_dementia_seed42.h5
+
+[train_graphs_original]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[val_graphs_original]
+num graphs: 952
+num subjects: 119
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 31, 1: 42, 0: 46}
+
+[test_graphs_original]
+num graphs: 944
+num subjects: 118
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 46, 1: 41, 2: 31}
+
+[train_graphs_after_original_random_k]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[train_segment_instances]
+num graphs: 100382
+num subjects: 947
+segments per subject: min=106, mean=106.00, max=106
+subjects per label: {0: 366, 1: 333, 2: 248}
+
+[val_segment_instances]
+num graphs: 952
+num subjects: 119
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {2: 31, 1: 42, 0: 46}
+
+[test_segment_instances]
+num graphs: 944
+num subjects: 118
+segments per subject: min=8, mean=8.00, max=8
+subjects per label: {0: 46, 1: 41, 2: 31}
+Saved top-k checkpoint: epoch=1, val_loss=0.981648, val_bal_acc=0.4616, val_macro_f1=0.4160
+Validation loss improved at epoch 1: 0.981648
+Saved top-k checkpoint: epoch=2, val_loss=0.939450, val_bal_acc=0.5174, val_macro_f1=0.5024
+Validation loss improved at epoch 2: 0.939450
+Saved top-k checkpoint: epoch=3, val_loss=0.957511, val_bal_acc=0.5231, val_macro_f1=0.4774
+Saved top-k checkpoint: epoch=4, val_loss=0.938574, val_bal_acc=0.5089, val_macro_f1=0.5124
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed100/best_model_topk_epoch001_valloss0.981648.pt
+Epoch [005/500] | Train Loss: 0.8824 | Train Acc: 0.5797 | Train Bal Acc: 0.5740 | Train F1: 0.5695 || Val Loss: 0.9959 | Val Acc: 0.5378 | Val Bal Acc: 0.5296 | Val F1: 0.5085 ||LR: 0.001 -> 0.001
+Train pred counts: [442 274 231]
+Val pred counts: [73 20 26]
+Saved top-k checkpoint: epoch=6, val_loss=0.929133, val_bal_acc=0.5291, val_macro_f1=0.5041
+Removed checkpoint that fell out of top-3: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed100/best_model_topk_epoch003_valloss0.957511.pt
+Validation loss improved at epoch 6: 0.929133
+Epoch [010/500] | Train Loss: 0.7772 | Train Acc: 0.6357 | Train Bal Acc: 0.6322 | Train F1: 0.6288 || Val Loss: 1.0429 | Val Acc: 0.5210 | Val Bal Acc: 0.5017 | Val F1: 0.5001 ||LR: 0.001 -> 0.001
+Train pred counts: [405 296 246]
+Val pred counts: [65 35 19]
+Epoch [015/500] | Train Loss: 0.6353 | Train Acc: 0.7159 | Train Bal Acc: 0.7087 | Train F1: 0.7123 || Val Loss: 1.0306 | Val Acc: 0.5546 | Val Bal Acc: 0.5495 | Val F1: 0.5538 ||LR: 0.001 -> 0.001
+Train pred counts: [376 348 223]
+Val pred counts: [45 47 27]
+Epoch [020/500] | Train Loss: 0.4939 | Train Acc: 0.7909 | Train Bal Acc: 0.7916 | Train F1: 0.7941 || Val Loss: 1.4201 | Val Acc: 0.5378 | Val Bal Acc: 0.5252 | Val F1: 0.5275 ||LR: 0.001 -> 0.001
+Train pred counts: [364 347 236]
+Val pred counts: [45 48 26]
+Epoch [025/500] | Train Loss: 0.4087 | Train Acc: 0.8321 | Train Bal Acc: 0.8312 | Train F1: 0.8324 || Val Loss: 1.5952 | Val Acc: 0.5042 | Val Bal Acc: 0.4949 | Val F1: 0.4976 ||LR: 0.001 -> 0.001
+Train pred counts: [357 348 242]
+Val pred counts: [50 43 26]
+Epoch [030/500] | Train Loss: 0.3662 | Train Acc: 0.8511 | Train Bal Acc: 0.8545 | Train F1: 0.8552 || Val Loss: 1.5221 | Val Acc: 0.4958 | Val Bal Acc: 0.4995 | Val F1: 0.4986 ||LR: 0.001 -> 0.001
+Train pred counts: [358 344 245]
+Val pred counts: [30 56 33]
+Epoch [035/500] | Train Loss: 0.3251 | Train Acc: 0.8712 | Train Bal Acc: 0.8721 | Train F1: 0.8717 || Val Loss: 1.3655 | Val Acc: 0.5210 | Val Bal Acc: 0.5157 | Val F1: 0.5096 ||LR: 0.001 -> 0.001
+Train pred counts: [369 328 250]
+Val pred counts: [51 35 33]
+Epoch [040/500] | Train Loss: 0.2869 | Train Acc: 0.8891 | Train Bal Acc: 0.8869 | Train F1: 0.8881 || Val Loss: 1.7999 | Val Acc: 0.5462 | Val Bal Acc: 0.5430 | Val F1: 0.5415 ||LR: 0.001 -> 0.001
+Train pred counts: [361 345 241]
+Val pred counts: [49 39 31]
+Epoch [045/500] | Train Loss: 0.2243 | Train Acc: 0.9166 | Train Bal Acc: 0.9148 | Train F1: 0.9165 || Val Loss: 2.3529 | Val Acc: 0.5294 | Val Bal Acc: 0.5130 | Val F1: 0.5182 ||LR: 0.001 -> 0.001
+Train pred counts: [362 347 238]
+Val pred counts: [42 59 18]
+Epoch [050/500] | Train Loss: 0.1977 | Train Acc: 0.9081 | Train Bal Acc: 0.9077 | Train F1: 0.9072 || Val Loss: 2.2505 | Val Acc: 0.5294 | Val Bal Acc: 0.5047 | Val F1: 0.5041 ||LR: 0.001 -> 0.001
+Train pred counts: [365 331 251]
+Val pred counts: [58 44 17]
+No val-loss improvement at epoch 50. patience 1/100
+No val-loss improvement at epoch 51. patience 2/100
+No val-loss improvement at epoch 52. patience 3/100
+No val-loss improvement at epoch 53. patience 4/100
+No val-loss improvement at epoch 54. patience 5/100
+Epoch [055/500] | Train Loss: 0.2116 | Train Acc: 0.9176 | Train Bal Acc: 0.9188 | Train F1: 0.9181 || Val Loss: 1.9555 | Val Acc: 0.5378 | Val Bal Acc: 0.5203 | Val F1: 0.5261 ||LR: 0.001 -> 0.001
+Train pred counts: [360 336 251]
+Val pred counts: [53 47 19]
+No val-loss improvement at epoch 55. patience 6/100
+No val-loss improvement at epoch 56. patience 7/100
+No val-loss improvement at epoch 57. patience 8/100
+No val-loss improvement at epoch 58. patience 9/100
+No val-loss improvement at epoch 59. patience 10/100
+Epoch [060/500] | Train Loss: 0.1948 | Train Acc: 0.9293 | Train Bal Acc: 0.9292 | Train F1: 0.9274 || Val Loss: 2.1003 | Val Acc: 0.5126 | Val Bal Acc: 0.4950 | Val F1: 0.5000 ||LR: 0.001 -> 0.001
+Train pred counts: [365 323 259]
+Val pred counts: [39 63 17]
+No val-loss improvement at epoch 60. patience 11/100
+No val-loss improvement at epoch 61. patience 12/100
+No val-loss improvement at epoch 62. patience 13/100
+No val-loss improvement at epoch 63. patience 14/100
+No val-loss improvement at epoch 64. patience 15/100
+Epoch [065/500] | Train Loss: 0.1510 | Train Acc: 0.9493 | Train Bal Acc: 0.9508 | Train F1: 0.9510 || Val Loss: 2.5107 | Val Acc: 0.4874 | Val Bal Acc: 0.4678 | Val F1: 0.4714 ||LR: 0.001 -> 0.001
+Train pred counts: [365 335 247]
+Val pred counts: [53 48 18]
+No val-loss improvement at epoch 65. patience 16/100
+No val-loss improvement at epoch 66. patience 17/100
+No val-loss improvement at epoch 67. patience 18/100
+No val-loss improvement at epoch 68. patience 19/100
+No val-loss improvement at epoch 69. patience 20/100
+Epoch [070/500] | Train Loss: 0.1486 | Train Acc: 0.9493 | Train Bal Acc: 0.9506 | Train F1: 0.9503 || Val Loss: 2.6104 | Val Acc: 0.4958 | Val Bal Acc: 0.4763 | Val F1: 0.4784 ||LR: 0.001 -> 0.001
+Train pred counts: [368 329 250]
+Val pred counts: [41 61 17]
+No val-loss improvement at epoch 70. patience 21/100
+No val-loss improvement at epoch 71. patience 22/100
+No val-loss improvement at epoch 72. patience 23/100
+No val-loss improvement at epoch 73. patience 24/100
+No val-loss improvement at epoch 74. patience 25/100
+Epoch [075/500] | Train Loss: 0.1573 | Train Acc: 0.9324 | Train Bal Acc: 0.9336 | Train F1: 0.9328 || Val Loss: 2.4564 | Val Acc: 0.5630 | Val Bal Acc: 0.5554 | Val F1: 0.5610 ||LR: 0.001 -> 0.001
+Train pred counts: [359 337 251]
+Val pred counts: [44 51 24]
+No val-loss improvement at epoch 75. patience 26/100
+No val-loss improvement at epoch 76. patience 27/100
+No val-loss improvement at epoch 77. patience 28/100
+No val-loss improvement at epoch 78. patience 29/100
+No val-loss improvement at epoch 79. patience 30/100
+Epoch [080/500] | Train Loss: 0.1584 | Train Acc: 0.9472 | Train Bal Acc: 0.9474 | Train F1: 0.9478 || Val Loss: 2.2153 | Val Acc: 0.5630 | Val Bal Acc: 0.5463 | Val F1: 0.5540 ||LR: 0.001 -> 0.001
+Train pred counts: [363 339 245]
+Val pred counts: [52 48 19]
+No val-loss improvement at epoch 80. patience 31/100
+No val-loss improvement at epoch 81. patience 32/100
+No val-loss improvement at epoch 82. patience 33/100
+No val-loss improvement at epoch 83. patience 34/100
+No val-loss improvement at epoch 84. patience 35/100
+Epoch [085/500] | Train Loss: 0.1174 | Train Acc: 0.9451 | Train Bal Acc: 0.9441 | Train F1: 0.9442 || Val Loss: 2.4465 | Val Acc: 0.4958 | Val Bal Acc: 0.4680 | Val F1: 0.4651 ||LR: 0.001 -> 0.001
+Train pred counts: [364 336 247]
+Val pred counts: [48 58 13]
+No val-loss improvement at epoch 85. patience 36/100
+No val-loss improvement at epoch 86. patience 37/100
+No val-loss improvement at epoch 87. patience 38/100
+No val-loss improvement at epoch 88. patience 39/100
+No val-loss improvement at epoch 89. patience 40/100
+Epoch [090/500] | Train Loss: 0.1564 | Train Acc: 0.9440 | Train Bal Acc: 0.9451 | Train F1: 0.9442 || Val Loss: 2.4748 | Val Acc: 0.4958 | Val Bal Acc: 0.4574 | Val F1: 0.4377 ||LR: 0.001 -> 0.001
+Train pred counts: [364 330 253]
+Val pred counts: [52 58  9]
+No val-loss improvement at epoch 90. patience 41/100
+No val-loss improvement at epoch 91. patience 42/100
+No val-loss improvement at epoch 92. patience 43/100
+No val-loss improvement at epoch 93. patience 44/100
+No val-loss improvement at epoch 94. patience 45/100
+Epoch [095/500] | Train Loss: 0.1365 | Train Acc: 0.9472 | Train Bal Acc: 0.9484 | Train F1: 0.9484 || Val Loss: 2.7775 | Val Acc: 0.4958 | Val Bal Acc: 0.4693 | Val F1: 0.4646 ||LR: 0.001 -> 0.001
+Train pred counts: [362 338 247]
+Val pred counts: [47 59 13]
+No val-loss improvement at epoch 95. patience 46/100
+No val-loss improvement at epoch 96. patience 47/100
+No val-loss improvement at epoch 97. patience 48/100
+No val-loss improvement at epoch 98. patience 49/100
+No val-loss improvement at epoch 99. patience 50/100
+Epoch [100/500] | Train Loss: 0.0894 | Train Acc: 0.9609 | Train Bal Acc: 0.9604 | Train F1: 0.9602 || Val Loss: 2.9299 | Val Acc: 0.4958 | Val Bal Acc: 0.4807 | Val F1: 0.4804 ||LR: 0.001 -> 0.001
+Train pred counts: [365 333 249]
+Val pred counts: [51 42 26]
+No val-loss improvement at epoch 100. patience 51/100
+No val-loss improvement at epoch 101. patience 52/100
+No val-loss improvement at epoch 102. patience 53/100
+No val-loss improvement at epoch 103. patience 54/100
+No val-loss improvement at epoch 104. patience 55/100
+Epoch [105/500] | Train Loss: 0.1296 | Train Acc: 0.9694 | Train Bal Acc: 0.9702 | Train F1: 0.9693 || Val Loss: 2.5655 | Val Acc: 0.4958 | Val Bal Acc: 0.4826 | Val F1: 0.4831 ||LR: 0.001 -> 0.001
+Train pred counts: [360 335 252]
+Val pred counts: [31 71 17]
+No val-loss improvement at epoch 105. patience 56/100
+No val-loss improvement at epoch 106. patience 57/100
+No val-loss improvement at epoch 107. patience 58/100
+No val-loss improvement at epoch 108. patience 59/100
+No val-loss improvement at epoch 109. patience 60/100
+Epoch [110/500] | Train Loss: 0.1485 | Train Acc: 0.9493 | Train Bal Acc: 0.9502 | Train F1: 0.9498 || Val Loss: 2.1916 | Val Acc: 0.5210 | Val Bal Acc: 0.5094 | Val F1: 0.5153 ||LR: 0.001 -> 0.001
+Train pred counts: [363 334 250]
+Val pred counts: [50 47 22]
+No val-loss improvement at epoch 110. patience 61/100
+No val-loss improvement at epoch 111. patience 62/100
+No val-loss improvement at epoch 112. patience 63/100
+No val-loss improvement at epoch 113. patience 64/100
+No val-loss improvement at epoch 114. patience 65/100
+Epoch [115/500] | Train Loss: 0.1014 | Train Acc: 0.9662 | Train Bal Acc: 0.9682 | Train F1: 0.9678 || Val Loss: 2.6051 | Val Acc: 0.5462 | Val Bal Acc: 0.5212 | Val F1: 0.5220 ||LR: 0.001 -> 0.001
+Train pred counts: [364 333 250]
+Val pred counts: [48 58 13]
+No val-loss improvement at epoch 115. patience 66/100
+No val-loss improvement at epoch 116. patience 67/100
+No val-loss improvement at epoch 117. patience 68/100
+No val-loss improvement at epoch 118. patience 69/100
+No val-loss improvement at epoch 119. patience 70/100
+Epoch [120/500] | Train Loss: 0.1236 | Train Acc: 0.9630 | Train Bal Acc: 0.9632 | Train F1: 0.9630 || Val Loss: 2.3657 | Val Acc: 0.5462 | Val Bal Acc: 0.5310 | Val F1: 0.5332 ||LR: 0.001 -> 0.001
+Train pred counts: [364 334 249]
+Val pred counts: [35 68 16]
+No val-loss improvement at epoch 120. patience 71/100
+No val-loss improvement at epoch 121. patience 72/100
+No val-loss improvement at epoch 122. patience 73/100
+No val-loss improvement at epoch 123. patience 74/100
+No val-loss improvement at epoch 124. patience 75/100
+Epoch [125/500] | Train Loss: 0.0977 | Train Acc: 0.9736 | Train Bal Acc: 0.9740 | Train F1: 0.9738 || Val Loss: 3.3237 | Val Acc: 0.4958 | Val Bal Acc: 0.4798 | Val F1: 0.4756 ||LR: 0.001 -> 0.001
+Train pred counts: [365 333 249]
+Val pred counts: [32 71 16]
+No val-loss improvement at epoch 125. patience 76/100
+No val-loss improvement at epoch 126. patience 77/100
+No val-loss improvement at epoch 127. patience 78/100
+No val-loss improvement at epoch 128. patience 79/100
+No val-loss improvement at epoch 129. patience 80/100
+Epoch [130/500] | Train Loss: 0.0880 | Train Acc: 0.9725 | Train Bal Acc: 0.9736 | Train F1: 0.9737 || Val Loss: 2.5195 | Val Acc: 0.5042 | Val Bal Acc: 0.4977 | Val F1: 0.5001 ||LR: 0.001 -> 0.001
+Train pred counts: [363 337 247]
+Val pred counts: [43 47 29]
+No val-loss improvement at epoch 130. patience 81/100
+No val-loss improvement at epoch 131. patience 82/100
+No val-loss improvement at epoch 132. patience 83/100
+No val-loss improvement at epoch 133. patience 84/100
+No val-loss improvement at epoch 134. patience 85/100
+Epoch [135/500] | Train Loss: 0.0779 | Train Acc: 0.9736 | Train Bal Acc: 0.9728 | Train F1: 0.9736 || Val Loss: 2.7075 | Val Acc: 0.4874 | Val Bal Acc: 0.4663 | Val F1: 0.4684 ||LR: 0.001 -> 0.001
+Train pred counts: [369 334 244]
+Val pred counts: [48 53 18]
+No val-loss improvement at epoch 135. patience 86/100
+No val-loss improvement at epoch 136. patience 87/100
+No val-loss improvement at epoch 137. patience 88/100
+No val-loss improvement at epoch 138. patience 89/100
+No val-loss improvement at epoch 139. patience 90/100
+Epoch [140/500] | Train Loss: 0.1054 | Train Acc: 0.9652 | Train Bal Acc: 0.9657 | Train F1: 0.9654 || Val Loss: 2.5549 | Val Acc: 0.4958 | Val Bal Acc: 0.4848 | Val F1: 0.4920 ||LR: 0.001 -> 0.001
+Train pred counts: [362 336 249]
+Val pred counts: [38 57 24]
+No val-loss improvement at epoch 140. patience 91/100
+No val-loss improvement at epoch 141. patience 92/100
+No val-loss improvement at epoch 142. patience 93/100
+No val-loss improvement at epoch 143. patience 94/100
+No val-loss improvement at epoch 144. patience 95/100
+Epoch [145/500] | Train Loss: 0.0940 | Train Acc: 0.9704 | Train Bal Acc: 0.9695 | Train F1: 0.9701 || Val Loss: 2.3289 | Val Acc: 0.5294 | Val Bal Acc: 0.5221 | Val F1: 0.5207 ||LR: 0.001 -> 0.001
+Train pred counts: [369 333 245]
+Val pred counts: [31 63 25]
+No val-loss improvement at epoch 145. patience 96/100
+No val-loss improvement at epoch 146. patience 97/100
+No val-loss improvement at epoch 147. patience 98/100
+No val-loss improvement at epoch 148. patience 99/100
+No val-loss improvement at epoch 149. patience 100/100
+Early stopping triggered at epoch 149. Best val_loss=0.929133 (epoch 6).
+Saved final selected checkpoint to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed100/best_model.pt
+Saved segment attention with prototypes to: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/seed100/segment_attention_with_prototypes.csv
+  split  subject_id  true_label  ...   prob_0    prob_1    prob_2
+0  test  test_00001           1  ...  0.44945  0.394442  0.156108
+1  test  test_00001           1  ...  0.44945  0.394442  0.156108
+2  test  test_00001           1  ...  0.44945  0.394442  0.156108
+3  test  test_00001           1  ...  0.44945  0.394442  0.156108
+4  test  test_00001           1  ...  0.44945  0.394442  0.156108
+
+[5 rows x 11 columns]
+Saved per-seed results: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/agg_seed_results/all_seed_results.csv
+Saved aggregate results: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/agg_seed_results/aggregate_seed_results.csv
+Saved aggregate confusion matrix: /home/anphan/Documents/CAUEEG/result_MIL-LinkX-level/20260501_182813_segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed/agg_seed_results/aggregate_confusion_matrix.json
+run_name segment_original_random_k_wpli_k10_gcnnorm_gnn_bank_gatv2_mean_fixed
+
+Aggregate across seeds:
+  accuracy_mean_std balanced_accuracy_mean_std macro_f1_mean_std
+0   0.5960 ± 0.0176            0.6041 ± 0.0197   0.5682 ± 0.0189

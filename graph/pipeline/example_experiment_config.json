@@ -1,0 +1,91 @@
+{
+  "experiment_name": "block0_aheap_subject_node_only",
+  "dataset": {
+    "name": "aheap",
+    "root_dir": "/mnt/data/anphan/derivatives",
+    "participants_path": "/home/anphan/Documents/EEG_Project/participants.tsv",
+    "max_subjects": null,
+    "verbose": false
+  },
+  "preprocessing": {
+    "apply_bandpass": true,
+    "bandpass_low_freq": 0.5,
+    "bandpass_high_freq": 45.0,
+    "bandpass_order": 4,
+    "apply_notch": false,
+    "reference_mode": "none",
+    "signal_norm_mode": "none",
+    "window_sec": 4.0,
+    "overlap": 0.5,
+    "apply_qc": true,
+    "qc_input_unit": "auto",
+    "min_valid_windows": 1,
+    "macro_duration_sec": 300.0,
+    "macro_step_sec": 300.0
+  },
+  "representation": {
+    "feature_groups": [
+      "time_domain",
+      "hjorth",
+      "relative_band_power",
+      "entropy"
+    ],
+    "feature_aggregation": "mean",
+    "feature_bands": {
+      "delta": [1, 4],
+      "theta": [4, 8],
+      "alpha": [8, 13],
+      "beta": [13, 30],
+      "gamma": [30, 45]
+    },
+    "connectivity_metric": "coherence",
+    "connectivity_aggregation": "mean",
+    "connectivity_bands": {
+      "delta": [1, 4],
+      "theta": [4, 8],
+      "alpha": [8, 13],
+      "beta": [13, 30],
+      "gamma": [30, 45]
+    }
+  },
+  "experiment": {
+    "graph_level": "subject",
+    "model_family": "node_only",
+    "aggregation": "none",
+    "subject_aggregation": "soft_vote"
+  },
+  "graph_builder": {
+    "topology_mode": "fixed",
+    "edge_weight_mode": "binary",
+    "fixed_topology_name": "mono_fixed",
+    "connectivity_band": "alpha"
+  },
+  "model": {
+    "readout": "flatten",
+    "hidden_dims": [256, 128],
+    "emb_dim": 128,
+    "dropout": 0.2,
+    "use_batchnorm": false
+  },
+  "training": {
+    "batch_size": 8,
+    "num_epochs": 30,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "loss_name": "cross_entropy",
+    "monitor": "balanced_accuracy",
+    "early_stopping_patience": 10,
+    "use_amp": false,
+    "verbose": true
+  },
+  "cv": {
+    "n_folds": 5,
+    "val_ratio": 0.2
+  },
+  "runtime": {
+    "device": "cuda",
+    "prefer_gpu": true,
+    "num_workers": 0,
+    "deterministic": true
+  }
+}
